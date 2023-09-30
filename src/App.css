@@ -4,39 +4,50 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(38, 30, 192, 0.1);
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the heading */
+h2 {
+  color: #ed0202;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Style for the form table (you can adjust spacing as needed) */
+.form-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.card {
-  padding: 2em;
+/* Style for individual form rows (labels and input fields) */
+.form-row {
+  display: flex;
+  justify-content: center; /* Horizontally center the elements */
+  align-items: center; /* Vertically center the elements */
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+/* Style for labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center; /* Center the text within the label */
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Expand the input fields to fill the available space */
+  max-width: 300px; /* Set a maximum width to prevent overly wide fields */
 }
